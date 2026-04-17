@@ -17,12 +17,13 @@ setup(
     zip_safe=True,
     maintainer='0',
     maintainer_email='@',
-    description='A* global planner + path follower',
+    description='A* global planner + laser-based live mapper + path follower',
     license='Apache License 2.0',
     entry_points={
         'console_scripts': [
             'a_star_planner_node = a_star_planner.a_star_planner_node:main',
             'path_follower_node = a_star_planner.path_follower_node:main',
+            'laser_grid_mapper_node = a_star_planner.laser_grid_mapper_node:main',
         ],
     },
 )
