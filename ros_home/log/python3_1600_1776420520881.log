@@ -1,5 +1,0 @@
-[INFO] [1776420520.923742556] [bug0_planner_node]: Bug 0 planner ready. Send a goal on /goal_pose.
-[INFO] [1776420527.075829363] [bug0_planner_node]: New goal in frame 'odom'
-[INFO] [1776420527.103123347] [bug0_planner_node]: Goal transformed into 'odom'
-[INFO] [1776420527.103490223] [bug0_planner_node]: Obstacle ahead (0.10 m, cone ±30°) -> WALL_FOLLOW
-[INFO] [1776420556.242338982] [bug0_planner_node]: Leaving wall: front=3.09 goal_dir=5.99 >= 0.90 -> GO_TO_GOAL

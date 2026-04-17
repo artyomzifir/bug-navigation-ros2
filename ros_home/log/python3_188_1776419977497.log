@@ -1,8 +1,0 @@
-[INFO] [1776419977.530472133] [spawn_entity]: Spawn Entity started
-[INFO] [1776419977.530706547] [spawn_entity]: Loading entity published on topic robot_description
-[INFO] [1776419977.531799064] [spawn_entity]: Waiting for entity xml on robot_description
-[INFO] [1776419977.542790239] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
-[INFO] [1776419977.542988124] [spawn_entity]: Waiting for service /spawn_entity
-[INFO] [1776419978.046109976] [spawn_entity]: Calling service /spawn_entity
-[INFO] [1776420079.804770829] [spawn_entity]: Spawn status: Entity pushed to spawn queue, but spawn service timed outwaiting for entity to appear in simulation under the name [diff_drive_robot]
-[ERROR] [1776420079.805019664] [spawn_entity]: Spawn service failed. Exiting.
