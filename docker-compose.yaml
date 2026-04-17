@@ -1,22 +1,76 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Path planning homework — dev container.
+#
+# Files in repo root:
+#     bug-navigation-ros2/
+#     ├── Dockerfile
+#     ├── docker-compose.yaml          <- this file
+#     ├── entrypoint.sh                <- fixes mount ownership at startup
+#     ├── README.md
+#     ├── rtabmap_diff_drive_tutorial/
+#     ├── bug_navigation/
+#     └── a_star_planner/
+#
+# First-time setup:
+#     printf "UID=%s\nGID=%s\n" "$(id -u)" "$(id -g)" > .env
+#     xhost +local:docker            # allow GUI from container
+#     docker compose up -d --build
+#     docker compose exec planning bash
+#                                    # ROS already sourced; first time, run:
+#                                    # > build
+#
+# The .env file is what makes UID/GID reach the build args reliably — bash
+# does not export GID by default, so reading them from .env is more robust
+# than relying on shell environment.
+# ─────────────────────────────────────────────────────────────────────────────
 services:
-  terminal:
-    build: .
-    image: amr_burger:jazzy
-    container_name: amr_terminal
+  planning:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+    image: planning:humble
+    container_name: planning
+    hostname: planning
+
     network_mode: host
-    privileged: true
+    ipc: host
+
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0}
+      - RMW_IMPLEMENTATION=${RMW_IMPLEMENTATION:-rmw_fastrtps_cpp}
+
+    volumes:
+      # X server socket so RViz / Gazebo / rqt can render on the host.
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/home/ros/.Xauthority:ro
+
+      # Each ROS package mounted individually under /ros2_ws/src.
+      - ./rtabmap_diff_drive_tutorial:/ros2_ws/src/rtabmap_diff_drive_tutorial:rw
+      - ./bug_navigation:/ros2_ws/src/bug_navigation:rw
+      - ./a_star_planner:/ros2_ws/src/a_star_planner:rw
+
+      # Persists ~/.ros (RTAB-Map db, ROS launch logs, saved maps) across
+      # restarts. Created on first run; entrypoint fixes ownership.
+      - ./ros_home:/home/ros/.ros:rw
+
+      # GPU rendering. Comment out on systems without /dev/dri.
+      - /dev/dri:/dev/dri
+
+    # Optional NVIDIA GPU. Uncomment if nvidia-container-toolkit is set up.
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+    command: sleep infinity
     stdin_open: true
     tty: true
-    environment:
-      - DISPLAY
-      - QT_X11_NO_MITSHM=1
-      - NVIDIA_VISIBLE_DEVICES=all
-      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video,graphics,display
-      - ROS_DOMAIN_ID=0
-    volumes:
-      - ${HOME}/.Xauthority:/root/.Xauthority:rw
-      - .:/ros2_ws/src:rw
-      - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - /dev/dri:/dev/dri:rw
-    working_dir: /ros2_ws
-    command: bash
+    restart: unless-stopped
