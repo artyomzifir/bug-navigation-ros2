@@ -1,0 +1,5 @@
+[INFO] [1776420971.035238860] [bug0_planner_node]: Bug 0 planner ready. Send a goal on /goal_pose.
+[WARN] [1776420971.037078576] [bug0_planner_node]: Waiting for scan / odom...
+[INFO] [1776420973.149196209] [bug0_planner_node]: New goal in frame 'odom'
+[INFO] [1776420973.222787888] [bug0_planner_node]: Goal transformed into 'odom'
+[INFO] [1776420984.038812859] [bug0_planner_node]: Obstacle ahead (0.49 m, cone ±30°) -> WALL_FOLLOW

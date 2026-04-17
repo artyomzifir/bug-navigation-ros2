@@ -1,0 +1,5 @@
+1776419980.4767394 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-09-59-40-476191-planning-400
+1776419980.4768262 [INFO] [launch]: Default logging verbosity is set to INFO
+1776419980.5009165 [INFO] [bug0_planner_node-1]: process started with pid [402]
+1776420193.6196151 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1776420193.7644193 [ERROR] [bug0_planner_node-1]: process has died [pid 402, exit code 1, cmd '/ros2_ws/install/bug_navigation/lib/bug_navigation/bug0_planner_node --ros-args -r __node:=bug0_planner_node --params-file /tmp/launch_params_a9o7c68n'].

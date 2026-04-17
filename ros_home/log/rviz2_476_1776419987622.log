@@ -1,0 +1,6 @@
+[INFO] [1776419988.098846465] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1776419988.099029544] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1776419988.114036226] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1776420091.974195538] [rviz2]: Message Filter dropping message: frame 'laser_link' at time 223.232 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1776420104.737256482] [rviz2]: Setting goal pose: Frame:odom, Position(3.4209, -3.19336, 0), Orientation(0, 0, -0.418798, 0.90808) = Angle: -0.864242
+[INFO] [1776420186.465430764] [rclcpp]: signal_handler(SIGINT/SIGTERM)

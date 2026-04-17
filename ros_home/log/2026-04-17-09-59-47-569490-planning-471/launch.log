@@ -1,0 +1,10 @@
+1776419987.5700617 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-09-59-47-569490-planning-471
+1776419987.5701504 [INFO] [launch]: Default logging verbosity is set to INFO
+1776419987.6006992 [INFO] [rtabmap-1]: process started with pid [472]
+1776419987.6008091 [INFO] [rtabmap_viz-2]: process started with pid [474]
+1776419987.6008623 [INFO] [rviz2-3]: process started with pid [476]
+1776419988.0956533 [ERROR] [rtabmap-1]: process has died [pid 472, exit code -6, cmd '/opt/ros/humble/lib/rtabmap_slam/rtabmap --ros-args -r __node:=rtabmap --params-file /tmp/launch_params_4jlp0e5f -r odom:=/odom -r imu:=/imu/data -r rgb/image:=/camera/image_raw -r rgb/camera_info:=/camera/camera_info -r depth/image:=/camera/depth/image_raw -r depth/camera_info:=/camera/depth/camera_info -r scan:=/scan'].
+1776420186.4656858 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1776420186.6146138 [INFO] [rviz2-3]: process has finished cleanly [pid 476]
+1776420186.6351008 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1776420186.6496763 [ERROR] [rtabmap_viz-2]: process has died [pid 474, exit code -2, cmd '/opt/ros/humble/lib/rtabmap_viz/rtabmap_viz --ros-args -r __node:=rtabmap_viz --params-file /tmp/launch_params_zo75jj32 -r odom:=/odom -r imu:=/imu/data -r rgb/image:=/camera/image_raw -r rgb/camera_info:=/camera/camera_info -r depth/image:=/camera/depth/image_raw -r depth/camera_info:=/camera/depth/camera_info -r scan:=/scan'].

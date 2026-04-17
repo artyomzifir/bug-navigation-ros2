@@ -1,0 +1,29 @@
+[WARN] [1776420191.594576929] [rtabmap_viz]: Parameter "queue_size" has been renamed to "sync_queue_size" and will be removed in future versions! The value (30) is copied to "sync_queue_size".
+[INFO] [1776420191.599673442] [rtabmap_viz]: rtabmap_viz: Using configuration from "/home/ros/.ros/rtabmapGUI.ini"
+[WARN] [1776420192.440924803] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[INFO] [1776420192.444879538] [rtabmap_viz]: Reading parameters from the ROS server...
+[ERROR] [1776420197.448684749] [rtabmap_viz]: Can't call rtabmap parameters service, is the node running?
+[INFO] [1776420197.448841799] [rtabmap_viz]: Parameters read = 0
+[INFO] [1776420197.634515844] [rtabmap_viz]: rtabmap_viz: subscribe_depth = false
+[INFO] [1776420197.634540618] [rtabmap_viz]: rtabmap_viz: subscribe_rgb = false
+[INFO] [1776420197.634543060] [rtabmap_viz]: rtabmap_viz: subscribe_stereo = false
+[INFO] [1776420197.634544906] [rtabmap_viz]: rtabmap_viz: subscribe_rgbd = false (rgbd_cameras=1)
+[INFO] [1776420197.634547388] [rtabmap_viz]: rtabmap_viz: subscribe_sensor_data = false
+[INFO] [1776420197.634549143] [rtabmap_viz]: rtabmap_viz: subscribe_odom_info = true
+[INFO] [1776420197.634550906] [rtabmap_viz]: rtabmap_viz: subscribe_user_data = false
+[INFO] [1776420197.634552608] [rtabmap_viz]: rtabmap_viz: subscribe_scan = false
+[INFO] [1776420197.634554380] [rtabmap_viz]: rtabmap_viz: subscribe_scan_cloud = false
+[INFO] [1776420197.634556101] [rtabmap_viz]: rtabmap_viz: subscribe_scan_descriptor = false
+[INFO] [1776420197.634557924] [rtabmap_viz]: rtabmap_viz: topic_queue_size = 10
+[INFO] [1776420197.634559979] [rtabmap_viz]: rtabmap_viz: sync_queue_size  = 30
+[INFO] [1776420197.634561679] [rtabmap_viz]: rtabmap_viz: qos_image       = 2
+[INFO] [1776420197.634563570] [rtabmap_viz]: rtabmap_viz: qos_camera_info = 2
+[INFO] [1776420197.634565371] [rtabmap_viz]: rtabmap_viz: qos_scan        = 2
+[INFO] [1776420197.634567248] [rtabmap_viz]: rtabmap_viz: qos_odom        = 2
+[INFO] [1776420197.634569110] [rtabmap_viz]: rtabmap_viz: qos_user_data   = 0
+[INFO] [1776420197.634570872] [rtabmap_viz]: rtabmap_viz: approx_sync     = true
+[INFO] [1776420197.634680242] [rtabmap_viz]: rtabmap_viz started.
+[WARN] [1776420198.624638098] [rtabmap_viz]: Service "rtabmap/resume" not available.
+[ERROR] [1776420198.624672634] [rtabmap_viz]: Can't call "resume" service
+[WARN] [1776420199.625108311] [rtabmap_viz]: Service "resume_odom" not available.
+[INFO] [1776420322.297046181] [rtabmap_viz]: rtabmap_viz stopping spinner...

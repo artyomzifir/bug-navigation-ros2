@@ -1,0 +1,5 @@
+1776420240.9910309 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-10-04-00-990197-planning-1521
+1776420240.9911323 [INFO] [launch]: Default logging verbosity is set to INFO
+1776420241.0173240 [INFO] [bug0_planner_node-1]: process started with pid [1522]
+1776420326.6904657 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1776420326.8338590 [ERROR] [bug0_planner_node-1]: process has died [pid 1522, exit code 1, cmd '/ros2_ws/install/bug_navigation/lib/bug_navigation/bug0_planner_node --ros-args -r __node:=bug0_planner_node --params-file /tmp/launch_params_xnv1im09'].

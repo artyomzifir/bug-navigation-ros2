@@ -1,0 +1,12 @@
+[INFO] [1776420241.287928168] [bug0_planner_node]: Bug 0 planner ready. Send a goal on /goal_pose.
+[WARN] [1776420241.302655912] [bug0_planner_node]: Waiting for scan / odom...
+[INFO] [1776420244.247376888] [bug0_planner_node]: New goal in frame 'odom'
+[INFO] [1776420244.307701923] [bug0_planner_node]: Goal transformed into 'odom'
+[INFO] [1776420261.231395072] [bug0_planner_node]: Goal reached. dist=0.19
+[INFO] [1776420267.908031158] [bug0_planner_node]: New goal in frame 'odom'
+[INFO] [1776420267.939430559] [bug0_planner_node]: Goal transformed into 'odom'
+[INFO] [1776420278.955439859] [bug0_planner_node]: Obstacle ahead (0.48 m, cone ±30°) -> WALL_FOLLOW
+[INFO] [1776420295.379848529] [bug0_planner_node]: Leaving wall: front=1.92 goal_dir=1.65 >= 0.90 -> GO_TO_GOAL
+[INFO] [1776420301.688464476] [bug0_planner_node]: Obstacle ahead (0.49 m, cone ±30°) -> WALL_FOLLOW
+[INFO] [1776420316.409440618] [bug0_planner_node]: Leaving wall: front=1.52 goal_dir=1.46 >= 0.90 -> GO_TO_GOAL
+[INFO] [1776420322.218699925] [bug0_planner_node]: Obstacle ahead (0.47 m, cone ±30°) -> WALL_FOLLOW

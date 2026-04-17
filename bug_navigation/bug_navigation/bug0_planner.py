@@ -87,7 +87,7 @@ class Bug0PlannerNode(Node):
         # Hard minimum time spent in WALL_FOLLOW before any leave check is
         # even allowed. Eliminates the per-tick GO_TO_GOAL <-> WALL_FOLLOW
         # ping-pong that was happening before.
-        self.declare_parameter('min_wall_follow_time_s', 2.5)
+        self.declare_parameter('min_wall_follow_time_s', 0.75)
 
         # --- Goal handling ---
         self.goal_pose_stamped = None

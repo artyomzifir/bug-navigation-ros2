@@ -1,0 +1,10 @@
+1776420191.2673690 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-10-03-11-266670-planning-1312
+1776420191.2674780 [INFO] [launch]: Default logging verbosity is set to INFO
+1776420191.3011277 [INFO] [rtabmap-1]: process started with pid [1313]
+1776420191.3012867 [INFO] [rtabmap_viz-2]: process started with pid [1315]
+1776420191.3013844 [INFO] [rviz2-3]: process started with pid [1317]
+1776420191.6993814 [ERROR] [rtabmap-1]: process has died [pid 1313, exit code -6, cmd '/opt/ros/humble/lib/rtabmap_slam/rtabmap --ros-args -r __node:=rtabmap --params-file /tmp/launch_params_8kp34kro -r odom:=/odom -r imu:=/imu/data -r rgb/image:=/camera/image_raw -r rgb/camera_info:=/camera/camera_info -r depth/image:=/camera/depth/image_raw -r depth/camera_info:=/camera/depth/camera_info -r scan:=/scan'].
+1776420322.4679222 [INFO] [rtabmap_viz-2]: process has finished cleanly [pid 1315]
+1776420787.6907752 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1776420787.8729508 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1776420787.8787396 [ERROR] [rviz2-3]: process has died [pid 1317, exit code -2, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /ros2_ws/install/rtabmap_diff_drive_tutorial/share/rtabmap_diff_drive_tutorial/config/rtabmap.rviz --ros-args -r __node:=rviz2 --params-file /tmp/launch_params_k8631js6'].

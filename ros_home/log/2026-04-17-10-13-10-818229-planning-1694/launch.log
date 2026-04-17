@@ -1,0 +1,63 @@
+1776420790.8187563 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-10-13-10-818229-planning-1694
+1776420790.8188426 [INFO] [launch]: Default logging verbosity is set to INFO
+1776420791.5549774 [INFO] [gzserver-1]: process started with pid [1696]
+1776420791.5551033 [INFO] [gzclient-2]: process started with pid [1698]
+1776420791.5551612 [INFO] [robot_state_publisher-3]: process started with pid [1700]
+1776420791.5551999 [INFO] [spawn_entity.py-4]: process started with pid [1702]
+1776420791.6999309 [gzserver-1] Gazebo multi-robot simulator, version 11.10.2
+1776420791.7000737 [gzserver-1] Copyright (C) 2012 Open Source Robotics Foundation.
+1776420791.7001059 [gzserver-1] Released under the Apache 2 License.
+1776420791.7001297 [gzserver-1] http://gazebosim.org
+1776420791.7001507 [gzserver-1] 
+1776420791.8382301 [gzserver-1] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+1776420791.8383381 [gzserver-1] #     # ####### ####### ###  #####  #######
+1776420791.8383672 [gzserver-1] ##    # #     #    #     #  #     # #
+1776420791.8383906 [gzserver-1] # #   # #     #    #     #  #       #
+1776420791.8384113 [gzserver-1] #  #  # #     #    #     #  #       #####
+1776420791.8384302 [gzserver-1] #   # # #     #    #     #  #       #
+1776420791.8384485 [gzserver-1] #    ## #     #    #     #  #     # #
+1776420791.8384671 [gzserver-1] #     # #######    #    ###  #####  #######
+1776420791.8384862 [gzserver-1] 
+1776420791.8385060 [gzserver-1] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+1776420791.8385253 [gzserver-1] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+1776420791.8385489 [gzserver-1] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+1776420791.8385692 [gzserver-1] 
+1776420791.8385887 [gzserver-1] [0m[1;33m
+1776420792.1290154 [gzserver-1] [0m[1;33m[0m[1;33m[0mALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+1776420792.1291220 [gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+1776420792.1291528 [gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+1776420792.1291757 [gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+1776420792.1291959 [gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+1776420792.1292148 [gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+1776420792.1292338 [gzserver-1] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+1776420792.1292536 [gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+1776420792.1292739 [gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+1776420792.1292944 [gzserver-1] [1;31m[Err] [OpenAL.cc:84] [0m[1;31mUnable to open audio device[[0m[1;31mdefault[0m[1;31m]
+1776420792.1293137 [gzserver-1]  Audio will be disabled.
+1776420792.1294553 [gzserver-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+1776420792.1294906 [gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+1776420792.1295152 [gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.7.128[0m[1;32m
+1776420792.1295431 [gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/ros2_ws/install/rtabmap_diff_drive_tutorial/share/rtabmap_diff_drive_tutorial/worlds/test.world[0m[1;32m][0m[1;32m
+1776420792.6301975 [gzserver-1] [0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+1776420793.1355150 [gzserver-1] [0m[INFO] [1776420793.135244305] [camera_plugin]: Publishing camera info to [/camera/camera_info]
+1776420793.1362052 [gzserver-1] [INFO] [1776420793.136044942] [camera_plugin]: Publishing depth camera info to [/camera/depth/camera_info]
+1776420793.1364603 [gzserver-1] [INFO] [1776420793.136278912] [camera_plugin]: Publishing pointcloud to [/camera/points]
+1776420793.1452503 [gzserver-1] [1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.1454520 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.1455402 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.1455805 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.1456161 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.1456504 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Sensor.cc:510] [0m[1;31mGet noise index not valid[0m[1;31m
+1776420793.2128768 [gzserver-1] [0m[1;31m[0m[1;31m[0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_0[0m[1;33m. Object will appear white
+1776420793.2130053 [gzserver-1] [0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_0[0m[1;33m. Object will appear white
+1776420793.2135458 [gzserver-1] [0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_1[0m[1;33m. Object will appear white
+1776420793.2136469 [gzserver-1] [0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_1[0m[1;33m. Object will appear white
+1776420793.2142558 [gzserver-1] [0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_2[0m[1;33m. Object will appear white
+1776420793.2144008 [gzserver-1] [0m[1;33m[Wrn] [Visual.cc:1056] [0m[1;33mUnable to get Material[[0m[1;33mGazebo/BrickWall[0m[1;33m] for Geometry[[0m[1;33mUntitled::Wall_0::Wall_0_Visual_2[0m[1;33m. Object will appear white
+1776420793.3124931 [gzserver-1] [0m[INFO] [1776420793.312272393] [differential_drive_controller]: Wheel pair 1 separation set to [0.340000m]
+1776420793.3126347 [gzserver-1] [INFO] [1776420793.312302718] [differential_drive_controller]: Wheel pair 1 diameter set to [0.100000m]
+1776420793.3129652 [gzserver-1] [INFO] [1776420793.312852305] [differential_drive_controller]: Subscribed to [/cmd_vel]
+1776420793.3143311 [gzserver-1] [INFO] [1776420793.314221828] [differential_drive_controller]: Advertise odometry on [/odom]
+1776420793.3157158 [gzserver-1] [INFO] [1776420793.315603566] [differential_drive_controller]: Publishing odom transforms between [odom] and [base_link]
+1776420793.3157907 [gzserver-1] [INFO] [1776420793.315622005] [differential_drive_controller]: Publishing wheel transforms between [base_link], [left_wheel_joint] and [right_wheel_joint]
+1776420793.3307776 [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 1702]

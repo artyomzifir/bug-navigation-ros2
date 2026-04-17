@@ -1,0 +1,7 @@
+1776420795.0032468 [INFO] [launch]: All log files can be found below /home/ros/.ros/log/2026-04-17-10-13-15-002550-planning-1916
+1776420795.0033524 [INFO] [launch]: Default logging verbosity is set to INFO
+1776420795.0347712 [INFO] [rtabmap-1]: process started with pid [1918]
+1776420795.0349090 [INFO] [rtabmap_viz-2]: process started with pid [1920]
+1776420795.0349612 [INFO] [rviz2-3]: process started with pid [1922]
+1776420795.3745611 [ERROR] [rtabmap-1]: process has died [pid 1918, exit code -6, cmd '/opt/ros/humble/lib/rtabmap_slam/rtabmap --ros-args -r __node:=rtabmap --params-file /tmp/launch_params_ur872sob -r odom:=/odom -r imu:=/imu/data -r rgb/image:=/camera/image_raw -r rgb/camera_info:=/camera/camera_info -r depth/image:=/camera/depth/image_raw -r depth/camera_info:=/camera/depth/camera_info -r scan:=/scan'].
+1776420887.4887059 [INFO] [rtabmap_viz-2]: process has finished cleanly [pid 1920]

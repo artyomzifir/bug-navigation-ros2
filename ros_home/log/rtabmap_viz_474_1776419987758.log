@@ -1,0 +1,25 @@
+[WARN] [1776419987.978368488] [rtabmap_viz]: Parameter "queue_size" has been renamed to "sync_queue_size" and will be removed in future versions! The value (30) is copied to "sync_queue_size".
+[INFO] [1776419987.983442241] [rtabmap_viz]: rtabmap_viz: Using configuration from "/home/ros/.ros/rtabmapGUI.ini"
+[WARN] [1776419988.734573335] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[INFO] [1776419988.736899126] [rtabmap_viz]: Reading parameters from the ROS server...
+[INFO] [1776419993.739351349] [rtabmap_viz]: Parameters read = 0
+[INFO] [1776419993.928723164] [rtabmap_viz]: rtabmap_viz: subscribe_depth = false
+[INFO] [1776419993.928739915] [rtabmap_viz]: rtabmap_viz: subscribe_rgb = false
+[INFO] [1776419993.928742395] [rtabmap_viz]: rtabmap_viz: subscribe_stereo = false
+[INFO] [1776419993.928744215] [rtabmap_viz]: rtabmap_viz: subscribe_rgbd = false (rgbd_cameras=1)
+[INFO] [1776419993.928746706] [rtabmap_viz]: rtabmap_viz: subscribe_sensor_data = false
+[INFO] [1776419993.928748428] [rtabmap_viz]: rtabmap_viz: subscribe_odom_info = true
+[INFO] [1776419993.928750163] [rtabmap_viz]: rtabmap_viz: subscribe_user_data = false
+[INFO] [1776419993.928751841] [rtabmap_viz]: rtabmap_viz: subscribe_scan = false
+[INFO] [1776419993.928753607] [rtabmap_viz]: rtabmap_viz: subscribe_scan_cloud = false
+[INFO] [1776419993.928755341] [rtabmap_viz]: rtabmap_viz: subscribe_scan_descriptor = false
+[INFO] [1776419993.928757214] [rtabmap_viz]: rtabmap_viz: topic_queue_size = 10
+[INFO] [1776419993.928759235] [rtabmap_viz]: rtabmap_viz: sync_queue_size  = 30
+[INFO] [1776419993.928760905] [rtabmap_viz]: rtabmap_viz: qos_image       = 2
+[INFO] [1776419993.928762740] [rtabmap_viz]: rtabmap_viz: qos_camera_info = 2
+[INFO] [1776419993.928764510] [rtabmap_viz]: rtabmap_viz: qos_scan        = 2
+[INFO] [1776419993.928766252] [rtabmap_viz]: rtabmap_viz: qos_odom        = 2
+[INFO] [1776419993.928767988] [rtabmap_viz]: rtabmap_viz: qos_user_data   = 0
+[INFO] [1776419993.928769730] [rtabmap_viz]: rtabmap_viz: approx_sync     = true
+[INFO] [1776419993.928838441] [rtabmap_viz]: rtabmap_viz started.
+[INFO] [1776420186.465390997] [rtabmap_viz]: rtabmap_viz stopping spinner...

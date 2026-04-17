@@ -1,0 +1,20 @@
+[INFO] [1776420191.536379209] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1776420191.536509136] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1776420191.573461023] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1776420244.245154881] [rviz2]: Setting goal pose: Frame:odom, Position(2.19569, -3.74025, 0), Orientation(0, 0, -0.917787, 0.397073) = Angle: -2.32494
+[INFO] [1776420267.907192341] [rviz2]: Setting goal pose: Frame:odom, Position(0.272004, -0.991209, 0), Orientation(0, 0, -0.885681, 0.464294) = Angle: -2.17592
+[INFO] [1776420341.173890009] [rviz2]: Setting goal pose: Frame:odom, Position(-3.03078, 1.11126, 0), Orientation(0, 0, -0.951826, 0.306638) = Angle: -2.51828
+[WARN] [1776420379.590940538] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1776420379.591043074] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[INFO] [1776420397.079656228] [rviz2]: Setting goal pose: Frame:odom, Position(-3.38399, 3.50202, 0), Orientation(0, 0, -0.772955, 0.634461) = Angle: -1.76697
+[INFO] [1776420527.073936214] [rviz2]: Setting goal pose: Frame:odom, Position(1.0101, 3.48156, 0), Orientation(0, 0, -0.703273, 0.71092) = Angle: -1.55998
+[INFO] [1776420568.544365414] [rviz2]: Setting goal pose: Frame:odom, Position(-5.27249, 0.990957, 0), Orientation(0, 0, -0.866761, 0.498723) = Angle: -2.09734
+[INFO] [1776420600.546584150] [rviz2]: Setting goal pose: Frame:odom, Position(0.724131, 0.10587, 0), Orientation(0, 0, -0.151272, 0.988492) = Angle: -0.30371
+[INFO] [1776420609.478506758] [rviz2]: Setting goal pose: Frame:odom, Position(2.49808, -0.520056, 0), Orientation(0, 0, -0.144967, 0.989436) = Angle: -0.290959
+[INFO] [1776420637.385269703] [rviz2]: Setting goal pose: Frame:odom, Position(1.3355, -2.77549, 0), Orientation(0, 0, -0.689418, 0.724364) = Angle: -1.52137
+[INFO] [1776420718.532923511] [rviz2]: Setting goal pose: Frame:odom, Position(0.576254, -0.671761, 0), Orientation(0, 0, -0.0918505, 0.995773) = Angle: -0.18396
+[WARN] [1776420773.575229206] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1776420773.575317337] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1776420775.260910284] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1776420775.260950781] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[INFO] [1776420787.690640168] [rclcpp]: signal_handler(SIGINT/SIGTERM)
