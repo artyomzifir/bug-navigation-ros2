@@ -50,9 +50,7 @@ services:
       - ${XAUTHORITY:-$HOME/.Xauthority}:/home/ros/.Xauthority:ro
 
       # Each ROS package mounted individually under /ros2_ws/src.
-      - ./rtabmap_diff_drive_tutorial:/ros2_ws/src/rtabmap_diff_drive_tutorial:rw
-      - ./bug_navigation:/ros2_ws/src/bug_navigation:rw
-      - ./a_star_planner:/ros2_ws/src/a_star_planner:rw
+      - ./:/ros2_ws/src/
 
       # Persists ~/.ros (RTAB-Map db, ROS launch logs, saved maps) across
       # restarts. Created on first run; entrypoint fixes ownership.
