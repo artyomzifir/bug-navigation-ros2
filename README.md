@@ -1,8 +1,10 @@
 # Path Planning Homework for ROS 2
 
-This repository contains a ROS 2 Humble homework project on mobile robot path planning in Gazebo. It includes three planners built on top of the differential drive robot from `rtabmap_diff_drive_tutorial`: Bug0, Bug1, and a global A* planner with a separate path follower. Bug0 and Bug1 are reactive planners based on `LaserScan` and odometry, while A* plans on an occupancy grid generated from RTAB-Map.
+![A* demo](demo-a-star.gif)
 
-The project is intended for comparing reactive and map-based navigation. Bug planners can run with only simulation and localization, while A* additionally requires a valid `/map` and TF in the `map` frame.
+This repository contains a ROS 2 Humble homework project on mobile robot path planning in Gazebo. It includes three planners built on top of a lidar-equipped differential drive robot from `robot_bringup`: Bug0, Bug1, and a global A* planner with a separate path follower. Bug0 and Bug1 are reactive planners based on `LaserScan` and odometry, while A* plans on an occupancy grid built live from the lidar scan.
+
+The project is intended for comparing reactive and map-based navigation. Bug planners only need the simulation running, while A* additionally requires a `/map` — provided automatically by the live mapper included in `a_star.launch.py`.
 
 ## Quick start
 
@@ -12,18 +14,12 @@ docker compose exec planning bash
 cd /ros2_ws
 colcon build --symlink-install
 source install/setup.bash
-````
+```
 
 Run simulation:
 
 ```bash
-ros2 launch rtabmap_diff_drive_tutorial robot_simulation.launch.py
-```
-
-Run localization:
-
-```bash
-ros2 launch rtabmap_diff_drive_tutorial rtabmap_no_mapping.launch.py database_path:=/root/.ros/rtabmap.db
+ros2 launch robot_bringup simulation.launch.py
 ```
 
 Run Bug0:
@@ -38,7 +34,7 @@ Run Bug1:
 ros2 launch bug_navigation bug1.launch.py
 ```
 
-Run A* with path follower:
+Run A* with live mapper and path follower:
 
 ```bash
 ros2 launch a_star_planner a_star.launch.py
